@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.bdcoe.co.in/login by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Jan 2017 15:24:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login-BDCoE</title>
+  <!--STYLES-->
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/angular-material.min.css">
+  <link rel="stylesheet" href="styles/angular-toastr.css">
+  <link rel="stylesheet" href="styles/animate.css">
+  <link rel="stylesheet" href="styles/dialogs.css">
+  <link rel="stylesheet" href="styles/font-awesomenew.css">
+  <link rel="stylesheet" href="styles/googleapis.css">
+  <link rel="stylesheet" href="styles/hover.css">
+  <link rel="stylesheet" href="styles/importer.css">
+  <link rel="stylesheet" href="styles/sidebar-left.css">
+  <!--STYLES END-->
+</head>
+<body ng-app="LoginMod" ng-controller="LoginCtrl">
+  <!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+  <!-- PAGE -->
+  <div id="page">
+
+    <!-- HEADER -->
+    <header id="navbar">
+
+      <!-- MENU BLOCK -->
+      <div class="menu_block">
+
+        <!-- CONTAINER -->
+        <div class="container clearfix" style="min-width: 1050px;">
+
+          <!-- LOGO -->
+          <div class="logo pull-left" style="cursor:default;height: 71px;padding-top: 10px;">
+            <a class="hvr-underline-from-center" style="height: 54px;"  href="index.html#/"><span class="b1" style="padding-left: 11px;">B</span><span class="b2">D</span><span class="b3">C</span><span class="b4">o</span><span class="b5">E</span></a>
+          </div><!-- //LOGO -->
+
+          <!-- MENU -->
+          <div class="pull-right" style="position: absolute;left: 13%;right: 15%;">
+            <nav class="navmenu center" style="min-width: 951px;left: 17%;right: 17%;">
+              <ul>
+                <li class="first scroll_btn hvr-underline-from-left"><a href="index.html#/"><span class=" glyphicon glyphicon-home" style="padding-right:3px"></span>Home</a></li>
+                <li class="scroll_btn hvr-underline-from-left"><a href="index.html#/what_we_do"><span class=" glyphicon glyphicon-cog" style="padding-right:3px"></span>What We Do</a></li>
+                <li class="scroll_btn hvr-underline-from-left"><a href="index.html#/portfolio"><span class=" glyphicon glyphicon-picture" style="padding-right:3px"></span>Portfolio</a></li>
+                <li class="scroll_btn hvr-underline-from-center"><a href="index.html#/about_us"><span class=" glyphicon glyphicon-tree-deciduous" style="padding-right:3px"></span>About Us</a></li>
+                <li class="scroll_btn hvr-underline-from-center"><a href="index.html#/news"><span class=" glyphicon glyphicon-list-alt" style="padding-right:3px"></span>News</a></li>
+                <li class="scroll_btn hvr-underline-from-right"><a href="index.html#/contact_us"><span class=" glyphicon glyphicon-phone" style="padding-right:3px"></span>Contact Us</a></li>
+                <li class="scroll_btn hvr-underline-from-right"><a href="login.html" ><span class=" glyphicon glyphicon-user" style="padding-right:3px"></span>Login</a></li>
+                <li class="scroll_btn hvr-underline-from-right"><a href="signup.html" ><span class=" glyphicon glyphicon-pencil" style="padding-right:3px"></span>Sign Up</a></li>
+              </ul>
+            </nav>
+          </div><!-- //MENU -->
+        </div><!-- //MENU BLOCK -->
+      </div><!-- //CONTAINER -->
+    </header><!-- //HEADER -->
+    </div>
+    <div id="loginbg" style="background-image: url(images/white.png);width: 100%;min-width: 1050px;height: auto;">
+      <div style="min-width: 150px;width: 100%;position: absolute;top: 128px;">
+      <div class="loginformbg">
+     <img class="img-circle bdlogo" src="images/logo.png">
+    <form ng-submit="runLogin()" style="position: absolute;top: 41%;left: 27%;right:27%;width: 49%;">
+      <div class="col-4">
+          <label>
+            Email
+            <input type="email" class="form-control" ng-model="email" placeholder="Enter email..." tabindex="1" required/>
+          </label>
+        </div>
+        <div class="col-2">
+          <label>
+            Password
+            <input type="password" class="form-control" ng-model="password" placeholder="Enter password..." tabindex="2" required/>
+          </label>
+        </div>
+        <div >
+
+        </div>
+          <input type="submit" class="form-control" value="login" style="position:relative;width:45%;left:27%;top:27%" required/>
+          <p class="message" style="position:relative;top:5px">Not registered? <a href="signup.html">Create an account</a></p>
+      </form>
+      </div>
+      </div>
+      <div>
+      <img src="images/corousel.png" class="corouselimg img-responsive">
+      <div class="corouseldiv carousel slide img-responsive" id="myCarousel" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" style="width:125%">
+    <div class="item active">
+      <img src="images/corousel/2.jpg">
+    </div>
+    <div class="item">
+      <img src="images/corousel/3.jpg">
+    </div>
+    <div class="item">
+      <img src="images/corousel/6.jpg">
+    </div>
+  </div>
+</div>
+      </div>
+      </div>
+  </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="js/dependencies/jquery.js"></script>
+  <script src="js/dependencies/bootstrap.min.js"></script>
+  <script src="js/dependencies/angular.js"></script>
+  <script src="js/dependencies/angular-animate.js"></script>
+  <script src="js/dependencies/angular-aria.min.js"></script>
+  <script src="js/dependencies/angular-material.min.js"></script>
+  <script src="js/dependencies/angular-messages.min.js"></script>
+  <script src="js/dependencies/angular-resource.js"></script>
+  <script src="js/dependencies/angular-route.js"></script>
+  <script src="js/dependencies/angular-toastr.js"></script>
+  <script src="js/dependencies/angular-toastr.tpls.js"></script>
+  <script src="js/dependencies/animate.js"></script>
+  <script src="js/dependencies/dialogs-default-translations.js"></script>
+  <script src="js/dependencies/dialogs.js"></script>
+  <script src="js/dependencies/jquery.BlackAndWhite.js"></script>
+  <script src="js/dependencies/jquery.flexslider-min.js"></script>
+  <script src="js/dependencies/jquery.nicescroll.min.js"></script>
+  <script src="js/dependencies/jquery.prettyPhoto.js"></script>
+  <script src="js/dependencies/members.js"></script>
+  <script src="js/dependencies/owl.carousel.js"></script>
+  <script src="js/dependencies/superfish.min.js"></script>
+  <script src="js/dependencies/ui-bootstrap-tpls-1.3.2.js"></script>
+  <script src="js/dependencies/wow.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/public/homepage/HomeMod.js"></script>
+  <script src="js/public/homepage/HomeCtrl.js"></script>
+  <script src="js/public/login/LoginMod.js"></script>
+  <script src="js/public/login/LoginCtrl.js"></script>
+  <script src="js/public/signup/SignupMod.js"></script>
+  <script src="js/public/signup/SignupCtrl.js"></script>
+  <script src="js/private/dashboard/DashMod.js"></script>
+  <script src="js/private/dashboard/DashCtrl.js"></script>
+  <script src="js/private/admin/AdminMod.js"></script>
+  <script src="js/private/admin/AdminCtrl.js"></script>
+  <!--SCRIPTS END-->
+</body>
+
+<!-- Mirrored from www.bdcoe.co.in/login by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Jan 2017 15:25:39 GMT -->
+</html>
